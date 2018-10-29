@@ -1,0 +1,10 @@
+/* just simple reseting css and making every element bordex-box sizing to avoid problems with padding in future  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e6f7ff;
+}
