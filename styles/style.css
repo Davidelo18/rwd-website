@@ -7,4 +7,47 @@
 
 body{
     background-color: #e6f7ff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* HEADER PART OF THE SITE */
+
+header{
+    background-color: #253144;
+    color: #ffffff;
+    padding: 10px;
+    display: flex; /* making a header a flexbox and place the logo, main menu and social menu in space between style */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    max-height: 20px;
+}
+
+header .logo .text-logo{
+    color: #bc140b;
+    font-weight: bold;
+}
+
+header nav ul, 
+header .services ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/* reseting default css for ul lists - menus in header */
+header nav ul a,
+header .services ul a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    transition: color .3s;
+}
+
+header nav ul a:hover{
+    color: #bc140b;
+    transition: color .3s;
 }
