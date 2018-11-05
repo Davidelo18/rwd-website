@@ -57,11 +57,12 @@ header nav ul a:hover{
 .slide-content{
     height: 70vh;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .banner{
     position: relative;
+    display: block;
     color: #ffffff;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -71,6 +72,16 @@ header nav ul a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: none;
+}
+
+.block-show{
+    animation: showImage 1.2s;
+}
+
+@keyframes showImage{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 /* setting images to each slide */ 
