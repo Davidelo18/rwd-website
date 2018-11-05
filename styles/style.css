@@ -11,8 +11,7 @@ body{
     font-size: 15px;
 }
 
-/* HEADER PART OF THE SITE */
-
+/* --- HEADER PART OF THE SITE --- */
 header{
     background-color: #253144;
     color: #ffffff;
@@ -50,4 +49,76 @@ header .services ul a{
 header nav ul a:hover{
     color: #bc140b;
     transition: color .3s;
+}
+
+/* --- STYLING THE SLIDER (BANNER) PART --- */
+.banner,
+#slider,
+.slide-content{
+    height: 70vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.banner{
+    position: relative;
+    color: #ffffff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/* styling every slide */
+.banner .slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* setting images to each slide */ 
+.slideNo1{background-image: url('../images/image1.jpg')}
+.slideNo2{background-image: url('../images/image2.jpg')}
+.slideNo3{background-image: url('../images/image3.jpg')}
+
+/* styling the content like text and button inside every slide */
+.banner .slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.banner .slide-content h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.banner .slide-content h2{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* styling the arrows (without images, just using css to make shapes) */
+.banner .arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.banner #arrow-left{
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #f2f6fc transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+.banner #arrow-right{
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #f2f6fc;
+    right: 0;
+    margin-right: 30px;
 }
