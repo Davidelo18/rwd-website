@@ -53,7 +53,7 @@ header nav ul a:hover{
 
 /* --- STYLING THE SLIDER (BANNER) PART --- */
 .banner,
-#slider,
+.slider,
 .slide-content{
     height: 70vh;
     width: 100%;
@@ -75,7 +75,8 @@ header nav ul a:hover{
     display: none;
 }
 
-.block-show{
+/* animation on slide change */
+.banner .block-show{
     animation: showImage 1.2s;
 }
 
@@ -85,9 +86,9 @@ header nav ul a:hover{
 }
 
 /* setting images to each slide */ 
-.slideNo1{background-image: url('../images/image1.jpg')}
-.slideNo2{background-image: url('../images/image2.jpg')}
-.slideNo3{background-image: url('../images/image3.jpg')}
+.slideNo1{background-image: url('../images/slider/image1.jpg')}
+.slideNo2{background-image: url('../images/slider/image2.jpg')}
+.slideNo3{background-image: url('../images/slider/image3.jpg')}
 
 /* styling the content like text and button inside every slide */
 .banner .slide-content{
@@ -108,6 +109,22 @@ header nav ul a:hover{
 .banner .slide-content h2{
     font-size: 1rem;
     font-weight: normal;
+}
+
+.banner .slide-content .slideButton{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+}
+
+.banner .slide-content .slideButton:hover{
+    background-color: #ffffff;
+    color: #253144;
+    text-shadow: none;
 }
 
 /* styling the arrows (without images, just using css to make shapes) */
@@ -132,4 +149,88 @@ header nav ul a:hover{
     border-color: transparent transparent transparent #f2f6fc;
     right: 0;
     margin-right: 30px;
+}
+
+/* --- STYLING THE WELCOME SECTION WITH CITE ---*/
+.welcome{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4b81d8;
+    color: #ffffff;
+}
+
+.welcome .content-title{
+    font-size: 2.2rem;
+}
+
+.welcome cite{
+    color: #dbdbdb;
+    font-size: 0.8rem;
+}
+
+/* --- STYLING THE MAIN CONTENT (ARTICLES) PART --- */
+main{
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+/* every group of 2 articles is closed in the flexbox div container */
+main .article-flex-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+main article{
+    flex: 1 1 50%;
+    padding: 0 5%;
+}
+
+/* content of every article (image, title and text) */ 
+main article .article-image{
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    transition: all .8s;
+}
+main article h3{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* every <article> is a link to that article */
+main article .link-article{
+    display: block;
+    text-decoration: none;
+    color: #7a7979;
+    transition: .8s;
+}
+
+main article .link-article:hover{
+    color: #000000;
+}
+
+/* container to store the image - zoom in without overflow */
+main article .container-article-image{overflow: hidden}
+
+main article .link-article:hover .article-image{
+    transform: scale(1.2);
+    transition: all .8s;
+}
+
+/* setting images to articles */
+main article .artImgNo1{background-image: url(../images/articles/art1.jpg)}
+main article .artImgNo2{background-image: url(../images/articles/art2.jpg)}
+main article .artImgNo3{background-image: url(../images/articles/art3.jpg)}
+main article .artImgNo4{background-image: url(../images/articles/art4.jpg)}
+
+/* --- STYLING THE FOOTER PART --- */
+
+footer{
+    background-color: #253144;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: .7rem;
 }
