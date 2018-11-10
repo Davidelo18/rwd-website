@@ -1,0 +1,104 @@
+/* MEDIA QUERY FOR TABLES OR SMALLER LAPTOPS/DESKTOPS */
+@media screen and (max-width: 1000px){
+    /* CHANGING DIRECTION OF FLEX BOXES TO COLUMN */
+    header, /* logo, main nav and social menu are now in column one under one */
+    header .mobile-menu, /* class that holds main nav and social menu together */
+    header nav ul{ /* options in the main nav are now in column one under one */
+        flex-direction: column;
+    }
+
+    header{
+        padding: 0;
+        text-align: center;
+        position: relative;
+    }
+
+    header .logo{padding: 20px 0}
+
+    /* main nav and social menu class */
+    header .mobile-menu{
+        width: 100%;
+        background: #142033;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+    }
+
+    header .mobile-nav-toggle-label:hover{
+        cursor: pointer;
+    }
+
+    /* styles needed to animation */
+    header .mobile-menu a,
+    header .mobile-menu i{
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    /* the 'burger' icon - menu */
+    header .mobile-nav-toggle-label{
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        background: #364255;
+    }
+
+    /* things doing after clicking the 'burger' menu button */
+    .mobile-nav-toggle:checked ~ .mobile-menu{
+        transform: scale(1,1);
+    }
+
+    .mobile-nav-toggle:checked ~ .mobile-menu a,
+    .mobile-nav-toggle:checked ~ .mobile-menu i{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+    /* some mobile devices styles on services menu */
+    header .services{
+        background-color: #142033;
+    }
+
+    header .services ul{
+        font-size: 1.5rem;
+        justify-content: space-around;
+    }
+
+    /* BANNER PART */ 
+
+    /* changing values of the slider content to smaller (and wider space) */
+    .banner .slide-content{width: 80%}
+
+    .banner .slide-content h1{font-size: 2rem}
+
+    .banner #arrow-left{
+        margin-left: 10px;
+        border-width: 15px 25px 15px 0;
+    }
+
+    .banner #arrow-right{
+        margin-right: 10px;
+        border-width: 15px 0px 15px 25px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILES AND SMALLER TABLETS */
+@media screen and (max-width: 720px){
+    /* CHANGING DIRECTION OF FLEX BOXES TO COLUMN */
+    main .article-flex-container{/* articles in the main section are now in column one under one */
+        flex-direction: column;
+    }
+
+    /* the articles in the main section are now in the column direction (one under one), seperated with 50px margin every */
+    main .article-flex-container{
+        margin: 0;
+    }
+
+    main article{
+        margin-bottom: 50px;
+    }
+}

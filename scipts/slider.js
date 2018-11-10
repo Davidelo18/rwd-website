@@ -2,7 +2,7 @@ let sliderImages = document.querySelectorAll('.slide'); //catch all the slides
 let arrowLeft = document.querySelector('#arrow-left');
 let arrowRight = document.querySelector('#arrow-right');
 let currentImage = 0; //variable that tell which img is now visible by index starting from 0 to length of sliderImages array
-let timeToChange = 7000; //time to change to the next slide automaticly
+const timeToChange = 7000; //time to change to the next slide automaticly
 
 //fuctions to slide previous and next images
 function slideBack() {

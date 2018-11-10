@@ -30,13 +30,21 @@ header .logo .text-logo{
     font-weight: bold;
 }
 
+/* the .mobile menu class store the main nav and social menu together, but on 
+desktop version it needs to be flex to move the main nav to the center */
+header .mobile-menu{
+    display: flex;
+    flex-basis: 61%; /* main nav takes about 22%, so it must have 78%/2 = 39% on the left and right (100 - 39) */
+    justify-content: space-between;
+}
+
 header nav ul, 
 header .services ul{
     list-style-type: none;
     display: flex;
 }
 
-/* reseting default css for ul lists - menus in header */
+/* reseting default css for ul lists - two menu in header */
 header nav ul a,
 header .services ul a{
     text-decoration: none;
@@ -49,6 +57,13 @@ header .services ul a{
 header nav ul a:hover{
     color: #bc140b;
     transition: color .3s;
+}
+
+header .current{color: #bc140b}
+
+header .mobile-nav-toggle,
+header .mobile-nav-toggle-label{
+    display: none;
 }
 
 /* --- STYLING THE SLIDER (BANNER) PART --- */
@@ -75,10 +90,9 @@ header nav ul a:hover{
     display: none;
 }
 
-/* animation on slide change */
-.banner .block-show{
-    animation: showImage 1.2s;
-}
+/* animation on slide change 
+ * block-show is a class given to actually visible image on slider */
+.banner .block-show{animation: showImage 1.2s}
 
 @keyframes showImage{
     from{opacity: 0;}
