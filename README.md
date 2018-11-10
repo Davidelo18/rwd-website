@@ -1,0 +1,23 @@
+#RWD Website
+
+Simple website and first project uploaded here. 
+
+Pliki napisane przeze mnie to: **index.html**, **style.css**, **media-queries.css**, **slider.js**
+
+##Cechy i zawartość
+
+- ** Responsywne MENU wykonane tylko z użyciem CSS **
+Zrobione na podstawie: https://www.youtube.com/watch?v=8QKOaTYvYUA z kilkoma modyfikacjami
+
+- ** Baner ze sliderem zdjęć **
+Inspirowane tym [tutorialem](https://www.youtube.com/watch?v=7ZO2RTMNSAY) z innym sposobem zmiany slajdów oraz z dodaną animacją wykonaną w całości przeze mnie.
+
+- ** Animacja przybliżanie na obrazach w głównej części strony **
+
+- ** Strona została stworzona na Flex box`ie **
+
+- ** Zawiera fontello **
+
+##Planowane aktualizacje
+
+- ** Usprawnienia kodu lub dodane funkcje w przyszłości **
