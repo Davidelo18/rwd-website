@@ -1,8 +1,8 @@
-var sliderImages = document.querySelectorAll('.slide'); //catch all the slides
-var arrowLeft = document.querySelector('#arrow-left');
-var arrowRight = document.querySelector('#arrow-right');
-var currentImage = 0; //variable that tell which img is now visible by index starting from 0 to length of sliderImages array
-var timeToChange = 7000; //time to change to the next slide automaticly
+const sliderImages = document.querySelectorAll('.slide'); //catch all the slides
+const arrowLeft = document.querySelector('#arrow-left');
+const arrowRight = document.querySelector('#arrow-right');
+let currentImage = 0; //variable that tell which img is now visible by index starting from 0 to length of sliderImages array
+const timeToChange = 7000; //time to change to the next slide automaticly
 
 //fuctions to slide previous and next images
 function slideBack() {
@@ -50,4 +50,4 @@ arrowRight.addEventListener('click', function () {
 
 //images automaticly switch after loading the website
 //clicking on any arrow reset the timer
-var myTimer = setInterval("slideNext()", timeToChange);
+let myTimer = setInterval("slideNext()", timeToChange);
