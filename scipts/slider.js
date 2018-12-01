@@ -50,4 +50,4 @@ arrowRight.addEventListener('click', function () {
 
 //images automaticly switch after loading the website
 //clicking on any arrow reset the timer
-let myTimer = setInterval("slideNext()", timeToChange);
+var myTimer = setInterval("slideNext()", timeToChange);
