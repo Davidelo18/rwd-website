@@ -4,6 +4,10 @@ Simple website and first project uploaded here.
 
 Pliki napisane przeze mnie to: **index.html**, **style.css**, **media-queries.css**, **slider.js**
 
+## Użyte technologie
+
+- Czysty HTML, CSS i JS (bez bibliotek ani frameworków)
+
 ## Cechy i zawartość
 
 - **Responsywne MENU wykonane tylko z użyciem CSS**
