@@ -1,6 +1,6 @@
 const sliderImages = document.querySelectorAll('.slide'); //catch all the slides
-const arrowLeft = document.querySelector('#arrow-left');
-const arrowRight = document.querySelector('#arrow-right');
+const arrowLeft = document.getElementById('arrow-left');
+const arrowRight = document.getElementById('arrow-right');
 let currentImage = 0; //variable that tell which img is now visible by index starting from 0 to length of sliderImages array
 const timeToChange = 7000; //time to change to the next slide automaticly
 
